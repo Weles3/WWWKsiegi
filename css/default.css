@@ -57,13 +57,8 @@ html, body {
     min-height: 500px;
 }
 
-#hero {
-    background-image: linear-gradient(to bottom, transparent, white), url(../img/hero.jpg);
 
-    /* Set a specific height */
-    min-height: 50%;
-  
-    /* Position and center the image to scale nicely on all screens */
+.ks-hero {  
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,10 +69,53 @@ html, body {
     align-items: center;
 }
 
-#hero > div {
+.ks-hero-hero {
+    background-image: linear-gradient(to bottom, transparent, white), url(../img/hero.jpg);
+
+    min-height: 50%;
+}
+
+.ks-hero-split {
+    background-image: linear-gradient(to bottom, transparent, white), url(../img/split.jpg);
+
+    min-height: 30%;
+}
+
+.ks-hero > div {
+    margin-top: 5em;
+}
+
+.hero-text {
     text-align: center;
     color: var(--wls-base-dark);
     font-weight: bold;
     font-size: 2em;
-    margin-top: 5em;
+}
+
+.ks-price {
+    border: 1px solid var(--wls-base-dark);
+    border-radius: var(--wls-border-radius);
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: white;
+}
+
+.ks-price-head {
+    text-align: center;
+    color: var(--wls-base-dark);
+}
+
+.ks-price-price {
+    text-align: center;
+    color: var(--wls-base-dark);
+    font-weight: bold;
+    border-bottom: 1px solid var(--wls-base-dark);
+}
+
+.ks-area {
+    text-align: justify;
+    border-radius: var(--wls-border-radius);
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: white;
 }
