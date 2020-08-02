@@ -10,6 +10,14 @@
     --wls-padding: .25em;
 }
 
+html, body {
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 ::selection {
     color: white;
     background-color: var(--wls-base-dark);
@@ -34,4 +42,42 @@
 
 .ks-logo-lg {
     height: 2.5rem;
+}
+
+.ks-logo-2lg {
+    height: 6rem;
+}
+
+#content {
+    background-image: url(../img/tlo.png);
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+#hero {
+    background-image: linear-gradient(to bottom, transparent, white), url(../img/hero.jpg);
+
+    /* Set a specific height */
+    min-height: 50%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero > div {
+    text-align: center;
+    color: var(--wls-base-dark);
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 5em;
 }

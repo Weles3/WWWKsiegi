@@ -18,23 +18,14 @@
         <script src="https://kit.fontawesome.com/59c136fc78.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav class="navbar navbar-light bg-white mb-2" id="navbar">
+        <nav class="navbar navbar-light bg-white" id="navbar">
             <a class="navbar-brand" href="{{ site.baseurl }}/">
                 <img src="{{ site.baseurl }}{{ site.data.icons.w3 }}" class="ks-logo-lg">
             </a>
         </nav>
     
-        <div class="container">
-            <div class="row">
-                <div class="col-12 mb-2 d-none" id="search_result">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 doc-content">
-                    {{ content }}
-                </div>
-            </div>
-        </div>
+        {{ content }}
+
         <script src="{{ site.baseurl }}/js/jquery.js"></script>
         <script src="{{ site.baseurl }}/js/bootstrap.js"></script>    
     </body>
