@@ -75,8 +75,20 @@ html, body {
     min-height: 50%;
 }
 
+.ks-hero-hero1 {
+    background-image: linear-gradient(to bottom, transparent, white), url(../img/hero1.jpg);
+
+    min-height: 50%;
+}
+
 .ks-hero-split {
     background-image: linear-gradient(to bottom, transparent, white), url(../img/split.jpg);
+
+    min-height: 30%;
+}
+
+.ks-hero-split1 {
+    background-image: linear-gradient(to bottom, transparent, white), url(../img/split1.jpg);
 
     min-height: 30%;
 }
@@ -118,4 +130,12 @@ html, body {
     padding: 1em;
     margin-bottom: 1em;
     background-color: white;
+}
+
+.logo-1em {
+    height: 1em;
+}
+
+.ks-pre {
+    white-space: pre-line
 }
