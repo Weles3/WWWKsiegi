@@ -29,6 +29,17 @@
 </head>
 
 <body>
+    <div id="cookieconsent" class="p-2 d-none">
+        <div class="text-muted small p-2">
+            Nasza witryna logowania może przechować niewielką ilość danych w Państwa przeglądarce aby polepszyć komfort
+            użytkowania. Dzięki temu będziemy mogli zmniejszać ilość danych które trzeba podać przy logowaniach oraz
+            pozyskiwać informację na temat wykorzystania strony, celem jej dalszego ulepszania. Dalsze korzystanie z
+            witryny oznacza zgodę na te działania.
+        </div>
+        <button id="cookieconsent_ok" class="btn btn-block btn-primary p-2">OK</button>
+    </div>
+    <script src="{{ site.baseurl }}/js/cookie.js"></script>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-white" id="navbar">
         <a class="navbar-brand mr-0" href="{{ site.baseurl }}/">
             <img src="{{ site.baseurl }}{{ site.data.icons.wk }}" class="ks-logo-lg">
